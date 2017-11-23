@@ -1,6 +1,5 @@
 '''
 Python hashmap implementation
-Used for hashing strings
 '''
 
 class HashMap:
@@ -42,6 +41,8 @@ def main():
 
    hmap.insert("a", "why")
    print(hmap.get("a"))
+
+   print(hmap.get("hello"))
 
 if __name__ == '__main__':
     main()
