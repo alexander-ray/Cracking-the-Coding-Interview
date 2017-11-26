@@ -1,5 +1,7 @@
 '''
 Python hashmap implementation
+Best case insert & lookup: O(1)
+Worst case insert & lookup: O(n)
 '''
 
 class HashMap:
