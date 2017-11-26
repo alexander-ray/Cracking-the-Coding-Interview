@@ -1,3 +1,7 @@
+# Graph playground in python
+# Includes implementations of DFS and BFS, as well as a Graph, Node, and other algorithms
+# The search algorithms are acting as traversals, though the visit method can be altered to include a check
+
 import queue
 
 class Graph:
@@ -17,11 +21,16 @@ class Node:
     def add_neighbor(self, node):
         self.neighbors.append(node)
 
+# Visit method
+# Can be extended to include a check for a given search
+def visit_node(n):
+    print("Node: " + str(n.id))
+
 # Recursive version of DFS
 def dfs_recursive(root):
     if (root == None):
         return
-    print("Node: " + str(root.id))
+    visit_node(root)
     root.visited = True
 
     for i in root.neighbors:
@@ -40,7 +49,7 @@ def dfs_iterative(root):
     while not q.empty():
         # Get node at front of queue, visit
         curr = q.get()
-        print("Node: " + str(curr.id))
+        visit_node(curr)
         # Iterate through neighbors, visiting as necessary
         # Add each neighbor to queue if not visited
         for i in curr.neighbors:
@@ -60,7 +69,7 @@ def bfs(root):
     while not q.empty():
         # Get node at front of queue, visit
         curr = q.get()
-        print("Node: " + str(curr.id))
+        visit_node(curr)
         # Iterate through neighbors, visiting as necessary
         # Add each neighbor to queue if not visited
         for i in curr.neighbors:
