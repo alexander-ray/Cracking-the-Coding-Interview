@@ -19,6 +19,7 @@ def possible_steps(n):
 
 def main():
     print(possible_steps(3))
+    print(possible_steps(8))
 
 if __name__ == '__main__':
     main()
