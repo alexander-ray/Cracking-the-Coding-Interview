@@ -4,7 +4,7 @@ import math
 # arr must be sorted in ascending order
 # Binary search variant
 def magic_index(arr, mindex, maxdex):
-    mid = math.ceil((maxdex-mindex)/2)
+    mid = math.ceil((maxdex+mindex)/2)
     if mindex > maxdex:
         return -1
     if arr[mid] == mid:
