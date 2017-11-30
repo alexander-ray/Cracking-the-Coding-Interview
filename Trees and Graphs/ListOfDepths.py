@@ -44,6 +44,7 @@ def ll_of_levels(root):
         q.put((curr.right, level + 1))
     return ret
 
+
 def main():
     root = Node(5)
     root.right = Node(6)
@@ -54,6 +55,7 @@ def main():
 
     #level_order_traversal(root)
     print(ll_of_levels(root))
+
 
 if __name__ == '__main__':
     main()
