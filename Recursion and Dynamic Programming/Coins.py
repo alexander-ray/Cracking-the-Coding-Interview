@@ -1,4 +1,3 @@
-
 def num_combinations(denoms, num_cents):
     l = len(denoms)
     # Num_cents + 1 to include 0 cent case
@@ -28,6 +27,7 @@ def main():
     arr = [1, 2, 3]
     n = 4
     print(num_combinations(arr, n))
+
 
 if __name__ == '__main__':
     main()
