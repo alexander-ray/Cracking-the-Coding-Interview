@@ -1,9 +1,11 @@
+
+
 # Function to produce a generator of all subsets of a given set s
 # Also known as "power set"
 def power_set(s):
     n = len(s)
 
-    # precalculating masks
+    # pre-calculating masks
     # powers of two
     masks = [1 << i for i in range(n)]
 
@@ -18,6 +20,7 @@ def main():
     g = power_set(l)
     for e in g:
         print(e)
+
 
 if __name__ == '__main__':
     main()
