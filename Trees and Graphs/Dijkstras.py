@@ -15,7 +15,7 @@ class Node:
 
 
 def dijkstras(g, target_id):
-
+    print('hello')
 
 def main():
     graph = Graph([Node(x) for x in range(0, 6)])
@@ -32,3 +32,4 @@ def main():
 
 
 if __name__ == '__main__':
+    main()
